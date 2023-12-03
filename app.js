@@ -97,7 +97,8 @@ export const run = async () => {
 
   const input2 =
     'Can you check if there is an available slot for a meeting next week?';
-  const input = 'Create Booking for 10AM this Wednesday.';
+  const input =
+    'Create Booking for 10AM this Wednesday. Then remove the one with Maria on Tuesday.';
   const inpu3 = 'Delete booking with Joe.';
 
   console.log(`Executing with input "${input}"...`);
