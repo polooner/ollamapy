@@ -95,22 +95,16 @@ export const run = async () => {
 
   console.log('Loaded agent.');
 
-  const input1 =
-    'Can you check if there is an available slot for a meeting next week?';
   const input2 =
+    'Can you check if there is an available slot for a meeting next week?';
+  const input =
     'Create Booking for 10AM this Wednesday. Then remove the one with Maria on Tuesday.';
-  const input3 = 'Delete booking with Joe.';
+  const inpu3 = 'Delete booking with Joe.';
 
-  console.log(`Executing with input 1"${input1}"...`);
-  var result = await executor.invoke({ input1 });
-  console.log(`Got output ${result.output}`);
+  console.log(`Executing with input "${input}"...`);
 
-  console.log(`Executing with input 2"${input2}"...`);
-  var result = await executor.invoke({ input2 });
-  console.log(`Got output ${result.output}`);
+  const result = await executor.invoke({ input });
 
-  console.log(`Executing with input 3"${input3}"...`);
-  var result = await executor.invoke({ input3 });
   console.log(`Got output ${result.output}`);
 };
 
