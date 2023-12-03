@@ -95,11 +95,11 @@ export const run = async () => {
 
   console.log('Loaded agent.');
 
-  const input2 =
+  const input1 =
     'Can you check if there is an available slot for a meeting next week?';
-  const input =
+  const input2 =
     'Create Booking for 10AM this Wednesday. Then remove the one with Maria on Tuesday.';
-  const inpu3 = 'Delete booking with Joe.';
+  const input3 = 'Delete booking with Joe.';
 
   console.log(`Executing with input "${input}"...`);
 
