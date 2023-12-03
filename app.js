@@ -88,13 +88,17 @@ export const run = async () => {
   ];
 
   const executor = await initializeAgentExecutorWithOptions(tools, model, {
-    agentType: 'chat-zero-shot-react-description',
+    agentType: 'zero-shot-react-description',
+    returnIntermediateSteps: true,
+    maxIterations: 5,
   });
 
   console.log('Loaded agent.');
 
-  const input =
+  const input2 =
     'Can you check if there is an available slot for a meeting next week?';
+  const input = 'Create Booking for 10AM this Wednesday.';
+  const inpu3 = 'Delete booking with Joe.';
 
   console.log(`Executing with input "${input}"...`);
 
